@@ -12,7 +12,7 @@ body {
     padding-top: 130px;
 }
 
-main{
+main {
     max-width: 1080px;
     margin: auto;
 }
@@ -30,17 +30,16 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
-    
 }
 
-a:hover{
+a:hover {
     color: rgb(0 0 239);
 }
 
-ul{
+ul {
     margin-left: 20px;
 }
 
@@ -130,7 +129,6 @@ h2 {
     color: #666;
 }
 
-
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -169,4 +167,99 @@ h2 {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .profile-picture {
+        right: 50%;
+        transform: translateX(50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        margin-bottom: 15px;
+    }
+
+    .contact-list {
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .header p {
+        font-size: 1.1em;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        margin-bottom: 15px;
+    }
 }
