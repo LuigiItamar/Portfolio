@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navbar = document.querySelector(".navbar.sidebar");
+
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active"); // Alterna entre ☰ e ✖
+        navbar.classList.toggle("active");     // Alterna a exibição do menu
+    });
+});
+
 document.querySelectorAll("a[href^='#']").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
