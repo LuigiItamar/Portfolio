@@ -15,7 +15,7 @@ body {
 main {
     max-width: 1080px;
     margin: auto;
-    padding-left: 220px; /* Espaço para a barra lateral no desktop */
+    padding-left: 220px;
 }
 
 .header {
@@ -23,12 +23,16 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #343a40;
+    background-color: #212139;
     color: white;
     text-align: center;
-    padding: 20px 20px;
+    padding: 18px 20px;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 25px;
 }
 
 a {
@@ -48,8 +52,8 @@ ul {
     position: absolute;
     top: 10px;
     right: 155px;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -66,14 +70,16 @@ ul {
 .navbar.sidebar {
     position: fixed;
     left: 0;
-    top: 115px;
-    width: 200px;
-    background-color: #343a40;
-    color: white;
+    top: 0;
+    width: 165px;
     height: 100vh;
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 800px), url(heaven.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 50px;
     z-index: 999;
+    overflow-y: auto;
+    transition: background-position 0.3s ease;
 }
 
 .navbar.sidebar ul {
@@ -98,7 +104,6 @@ ul {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Estilo para o menu hambúrguer (Mobile) */
 .navbar.active {
     left: 0;
 }
@@ -113,14 +118,6 @@ ul {
     color: white;
 }
 
-.hamburger::before {
-    content: "☰"; /* Ícone de menu (hambúrguer) */
-}
-
-.hamburger.active::before {
-    content: "✖"; /* Ícone de X */
-}
-
 .section {
     margin: 40px 0;
     padding: 20px;
@@ -130,8 +127,10 @@ ul {
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    padding-bottom: 15px;
 }
 
 .projects-grid {
@@ -175,7 +174,7 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: -webkit-center;
     transition: transform 0.3s ease;
 }
 
@@ -208,7 +207,8 @@ h2 {
 
 @media (max-width: 768px) {
     main {
-        padding-left: 0; /* Remove o espaço para a barra lateral no mobile */
+        padding-left: 0;
+        /* Remove o espaço para a barra lateral no mobile */
     }
 
     .navbar.sidebar {
@@ -230,7 +230,8 @@ h2 {
     }
 
     .navbar.sidebar ul li a {
-        padding: 15px 20px; /* Ajusta a altura das âncoras no mobile */
+        padding: 15px 20px;
+        /* Ajusta a altura das âncoras no mobile */
     }
 
     .hamburger {

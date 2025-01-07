@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Luigi Fidêncio Itamar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +15,7 @@
     <header class="header">
         <h1>Luigi Fidêncio Itamar</h1>
         <p>Desenvolvedor Full Stack</p>
-        <div class="hamburger" id="hamburger">
+        
             
         </div>
         <nav class="navbar sidebar" id="navbar">
@@ -32,15 +33,35 @@
 
     <main>
         <section class="section" id="about">
-            <h2>Sobre Mim</h2>
-            <p>Sou desenvolvedor full stack com ampla experiência em criar e otimizar soluções digitais. Paixão e
-                compromisso com a qualidade definem meu trabalho, além de minha busca constante por inovação e
-                aprimoramento em cada projeto.</p>
+            <h2>Sobre Mim:</h2>
+            <p><strong>Programador graduado</strong>, com experiência em:</p>
+            <br>
+            <p><strong>Linguagens e Frameworks: </strong>react / JS, Lavrável / PHP, MySQL, HTML5, Bootstrapp, Tailwind / CSS, Astro.</p>
+            <br>
+            <p><strong>CMS: </strong>StoryBlok, WordPress, Vtex.</p>
+            <br>
+            <p><strong>Outros conhecimentos: </strong>Conhecimento técnico como designer, utilizando Figma, Photoshopp, CorelDraw. Rápido aprendizado e com vontade de sempre aprender novas tecnologias.</p>
         </section>
 
         <section class="section" id="skills">
-            <h2>Habilidades</h2>
+            <h2>Habilidades:</h2>
             <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" />
+                    <p>React.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" />
+                    <p>Laravel</p>
+                </div>               
+                <div class="skill-card">
+                    <img src="logos-linguagens/php-svgrepo-com.svg" alt="Bootstrap" />
+                    <p>PHP</p>
+                </div>                
                 <div class="skill-card">
                     <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" />
                     <p>HTML</p>
@@ -50,35 +71,23 @@
                     <p>CSS</p>
                 </div>
                 <div class="skill-card">
-                    <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" />
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" />
-                    <p>React.js</p>
-                </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/php-svgrepo-com.svg" alt="Bootstrap" />
-                    <p>PHP</p>
-                </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" />
-                    <p>Laravel</p>
-                </div>
-                <div class="skill-card">
                     <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" />
                     <p>MySQL</p>
                 </div>
+            </div>
+
+            <div class="skills-grid my-4">
                 <div class="skill-card">
-                    <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshop" />
-                    <p>Photoshop</p>
+                    <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshopp" />
+                    <p>Photoshopp</p>
                 </div>
+                
             </div>
         </section>
 
 
         <section class="section" id="experience">
-            <h2>Experiência Profissional</h2>
+            <h2>Experiência Profissional:</h2>
             <div class="experience">
                 <h3>Desenvolvedor Full Stack - Empresa X</h3>
                 <p>Responsável pela implementação de soluções completas, desde a arquitetura de backend até interfaces
@@ -89,7 +98,7 @@
         </section>
 
         <section class="section" id="projects">
-            <h2>Projetos</h2>
+            <h2>Projetos:</h2>
             <div class="projects-grid">
                 <div class="card">
                     <h3>Projeto 1</h3>
@@ -122,7 +131,7 @@
 
 
         <section class="section" id="contact">
-            <h2>Contato</h2>
+            <h2>Contato:</h2>
             <p>Conecte-se comigo nas redes sociais:</p>
             <ul class="contact-list">
                 <li>
@@ -143,10 +152,6 @@
             </ul>
         </section>
     </main>
-
-    <footer class="footer">
-        <p>&copy; Luigi Fidêncio Itamar. Todos os direitos reservados.</p>
-    </footer>
 
     <script src="scripts.js"></script>
 </body>
