@@ -209,9 +209,6 @@ h2 {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    main {
-        padding-left: 0;
-    }
 
     .navbar.sidebar {
         display: none;

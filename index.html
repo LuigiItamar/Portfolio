@@ -26,23 +26,26 @@
     </header>
 
     <main>
-        <section class="section flex" id="about">
-            <div class="w-1/2 p-3">
+        <section class="section flex flex-col sm:flex-row" id="about">
+            <!-- Div com o texto -->
+            <div class="w-full sm:w-1/2 p-3 order-2 sm:order-1">
                 <h1>Luigi Fidêncio Itamar</h1>
                 <h2>Desenvolvedor Full Stack</h2>
-                <p>Sou desenvolvedor full stack e minha principal habilidade é transformar desafios em soluções práticas. Com um olhar atento para entender as necessidades dos clientes, crio sistemas e softwares que resolvem problemas de forma eficiente e personalizada.  
-                </p>
+                <p>Sou desenvolvedor full stack e minha principal habilidade é transformar desafios em soluções práticas. Com um olhar atento para entender as necessidades dos clientes, crio sistemas e softwares que resolvem problemas de forma eficiente e personalizada.</p>
                 <br>
                 <p>Além de desenvolver códigos limpos e otimizados, utilizo ferramentas como Figma e Photoshop para garantir interfaces intuitivas e funcionais. Meu objetivo é entregar soluções completas que aliem tecnologia, design e uma experiência excepcional para os usuários.</p>
                 <div class="flex">
                     <img class="w-32 pt-6" src="logos-linguagens/apis3-group.svg" alt="">
-                    <!-- <img class="w-5 pt-6" src="logos-linguagens/divisor.png" alt=""> -->
                 </div>
             </div>
-            <div class="foto">
+        
+            <!-- Div com a foto -->
+            <div class="w-full sm:w-1/2 foto order-1 sm:order-2">
                 <img src="logos-linguagens/luigi.jpg" alt="">
             </div>
         </section>
+        
+        
 
         <section class="section " id="projects">
             <h2>Ultimos Projetos:</h2>
@@ -89,60 +92,59 @@
 
         <section class="section" id="skills">
             <h2>Habilidades:</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" />
+            <div class="skills-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" class="mx-auto" />
                     <p>React.js</p>
                 </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" class="mx-auto" />
                     <p>JavaScript</p>
                 </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" class="mx-auto" />
                     <p>Laravel</p>
                 </div>               
-                <div class="skill-card">
-                    <img src="logos-linguagens/php-svgrepo-com.svg" alt="Bootstrap" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/php-svgrepo-com.svg" alt="PHP" class="mx-auto" />
                     <p>PHP</p>
                 </div>                
-                <div class="skill-card">
-                    <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" class="mx-auto" />
                     <p>HTML</p>
                 </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/css-3-svgrepo-com.svg" alt="CSS3" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/css-3-svgrepo-com.svg" alt="CSS3" class="mx-auto" />
                     <p>CSS</p>
                 </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" />
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" class="mx-auto" />
                     <p>MySQL</p>
                 </div>
-                <div class="skill-card">
-                    <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshopp" />
-                    <p>Photoshopp</p>
+                <div class="skill-card text-center">
+                    <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshop" class="mx-auto" />
+                    <p>Photoshop</p>
                 </div>
             </div>
-
         </section>
+        
 
         <section class="section" id="contact">
             <h2>Contato:</h2>
             <p>Conecte-se comigo nas redes sociais:</p>
-            <ul class="contact-list flex">
+            <ul class="contact-list flex flex-col md:flex-row">
                 <li class="p-3">
                     <a href="https://github.com/LuigiItamar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </li>
                 <li class="p-3">
-                    <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </li>
                 <li class="p-3">
-                    <a href="mailto:luigifidencioitamar@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
-                        Email: luigifidencioitamar@gmail.com</a>
+                    <a href="mailto:luigifidencioitamar@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email: luigifidencioitamar@gmail.com</a>
                 </li>
             </ul>
         </section>
+        
     </main>
 
     <script src="scripts.js"></script>
