@@ -1,31 +1,12 @@
-document.querySelectorAll("a[href^='#']").forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".header");
+    const shrinkThreshold = 50; // Altura em pixels para ativar o efeito de encolhimento
 
-        if (targetElement) {
-            const offset = 160;
-            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-
-            window.scrollTo({
-                top: elementPosition,
-                behavior: "smooth"
-            });
+    document.addEventListener("scroll", function () {
+        if (window.scrollY > shrinkThreshold) {
+            header.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
         }
     });
-});
-
-window.addEventListener("scroll", function () {
-    const profilePicture = document.querySelector(".profile-tilt img");
-
-    if (profilePicture) {
-        const scrollPosition = window.scrollY;
-        const maxZoom = 1.3;
-        const minZoom = 1.2;
-
-        const zoom = maxZoom - (scrollPosition / window.innerHeight) * (maxZoom - minZoom);
-
-        profilePicture.style.transform = `scale(${zoom})`;
-    }
 });

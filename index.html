@@ -13,25 +13,69 @@
 <body>
 
     <header class="header">
-        <h1>Luigi Fidêncio Itamar</h1>
-        <p>Desenvolvedor Full Stack</p>
-        
-            
-        </div>
-        <nav class="navbar sidebar" id="navbar">
-            <ul>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="profile-picture profile-tilt">
-            <img src="logos-linguagens/luigi.jpg">
+        <div class="conteudo-header">
+            <div class="left">
+                <img src="logos-linguagens/luigi.jpg" alt="Luigi">
+            </div>
+            <div class="right">
+                <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/LuigiItamar" target="_blank">GitHub</a>
+                <a href="mailto:luigifidencioitamar@gmail.com" target="_blank">Email</a>
+            </div>
         </div>
     </header>
 
     <main>
+        <section class="section flex" id="about">
+            <div class="w-1/2 p-3">
+                <h1>Luigi Fidêncio Itamar</h1>
+                <h2>Desenvolvedor Full Stack</h2>
+                <p>Sou desenvolvedor full stack e minha principal habilidade é transformar desafios em soluções práticas. Com um olhar atento para entender as necessidades dos clientes, crio sistemas e softwares que resolvem problemas de forma eficiente e personalizada.  
+                </p>
+                <br>
+                <p>Além de desenvolver códigos limpos e otimizados, utilizo ferramentas como Figma e Photoshop para garantir interfaces intuitivas e funcionais. Meu objetivo é entregar soluções completas que aliem tecnologia, design e uma experiência excepcional para os usuários.</p>
+                <div class="flex">
+                    <img class="w-32 pt-6" src="logos-linguagens/apis3-group.svg" alt="">
+                    <!-- <img class="w-5 pt-6" src="logos-linguagens/divisor.png" alt=""> -->
+                </div>
+            </div>
+            <div class="foto">
+                <img src="logos-linguagens/luigi.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="section " id="projects">
+            <h2>Ultimos Projetos:</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Projeto 1</h3>
+                    <p>Plataforma web de gestão com foco em UX e alta performance, desenvolvida em React e Laravel.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 2</h3>
+                    <p>Aplicativo de e-commerce, incluindo integração com API de pagamentos, desenvolvido em PHP e
+                        MySQL.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 3</h3>
+                    <p>Website responsivo com animações personalizadas, implementado com Bootstrap e JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 1</h3>
+                    <p>Plataforma web de gestão com foco em UX e alta performance, desenvolvida em React e Laravel.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 2</h3>
+                    <p>Aplicativo de e-commerce, incluindo integração com API de pagamentos, desenvolvido em PHP e
+                        MySQL.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 3</h3>
+                    <p>Website responsivo com animações personalizadas, implementado com Bootstrap e JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="about">
             <h2>Sobre Mim:</h2>
             <p><strong>Programador graduado</strong>, com experiência em:</p>
@@ -74,66 +118,26 @@
                     <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" />
                     <p>MySQL</p>
                 </div>
-            </div>
-
-            <div class="skills-grid my-4">
                 <div class="skill-card">
                     <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshopp" />
                     <p>Photoshopp</p>
                 </div>
-                
             </div>
-        </section>
 
-        <section class="section" id="projects">
-            <h2>Ultimos Projetos:</h2>
-            <div class="projects-grid">
-                <div class="card">
-                    <h3>Projeto 1</h3>
-                    <p>Plataforma web de gestão com foco em UX e alta performance, desenvolvida em React e Laravel.</p>
-                </div>
-                <div class="card">
-                    <h3>Projeto 2</h3>
-                    <p>Aplicativo de e-commerce, incluindo integração com API de pagamentos, desenvolvido em PHP e
-                        MySQL.</p>
-                </div>
-                <div class="card">
-                    <h3>Projeto 3</h3>
-                    <p>Website responsivo com animações personalizadas, implementado com Bootstrap e JavaScript.</p>
-                </div>
-                <div class="card">
-                    <h3>Projeto 1</h3>
-                    <p>Plataforma web de gestão com foco em UX e alta performance, desenvolvida em React e Laravel.</p>
-                </div>
-                <div class="card">
-                    <h3>Projeto 2</h3>
-                    <p>Aplicativo de e-commerce, incluindo integração com API de pagamentos, desenvolvido em PHP e
-                        MySQL.</p>
-                </div>
-                <div class="card">
-                    <h3>Projeto 3</h3>
-                    <p>Website responsivo com animações personalizadas, implementado com Bootstrap e JavaScript.</p>
-                </div>
-            </div>
         </section>
-
 
         <section class="section" id="contact">
             <h2>Contato:</h2>
             <p>Conecte-se comigo nas redes sociais:</p>
-            <ul class="contact-list">
-                <li>
+            <ul class="contact-list flex">
+                <li class="p-3">
                     <a href="https://github.com/LuigiItamar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </li>
-                <li>
+                <li class="p-3">
                     <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank"><i
                             class="fab fa-linkedin"></i> LinkedIn</a>
                 </li>
-                <li>
-                    <a href="https://wa.me/5511988296797" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: (11)
-                        98829-6797</a>
-                </li>
-                <li>
+                <li class="p-3">
                     <a href="mailto:luigifidencioitamar@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
                         Email: luigifidencioitamar@gmail.com</a>
                 </li>
