@@ -23,36 +23,36 @@ main {
     left: 0;
     background-color: #272727;
     width: 100%;
-    transition: height 0.5s ease, padding 0.5s ease, background 0.5s ease; /* Transição mais suave */
-    height: 120px; /* Altura inicial do header */
+    transition: height 0.5s ease, padding 0.5s ease, background 0.5s ease;
+    height: 120px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Sombras para dar destaque ao header */
+    z-index: 1000;
 }
 
 .header.shrink {
     height: 90px;
-    z-index: 1000; /* Altura mínima ajustada com base no conteúdo */
+    z-index: 1000;
 }
 
 .header img {
-    height: 80px; /* Tamanho inicial da imagem */
+    height: 80px;
     width: 80px;
     border-radius: 50%;
-    transition: height 0.5s ease, width 0.5s ease; /* Transição suave para a imagem */
+    transition: height 0.5s ease, width 0.5s ease;
 }
 
 .header.shrink img {
-    height: 60px; /* Ajuste proporcional para o header menor */
+    height: 60px;
     width: 60px;
 }
 
 .header p {
-    font-size: 16px; /* Tamanho inicial da descrição */
-    transition: font-size 0.5s ease; /* Transição suave para a descrição */
+    font-size: 16px;
+    transition: font-size 0.5s ease;
 }
 
 .header.shrink p {
-    font-size: 14px; /* Ajuste do tamanho da descrição para o header menor */
+    font-size: 14px;
 }
 
 .conteudo-header {
@@ -75,12 +75,12 @@ main {
 }
 
 .header .center {
-    flex: 1; /* Garante que o conteúdo do centro ocupe o espaço restante */
-    justify-content: center; /* Centraliza horizontalmente */
+    flex: 1;
+    justify-content: center;
 }
 
 .header .right {
-    gap: 15px; /* Espaçamento entre os itens da direita */
+    gap: 15px;
 }
 
 .header img {
@@ -105,9 +105,9 @@ ul {
 
 .foto{
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100%; /* Certifique-se de que a div tenha uma altura definida */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .foto img{
