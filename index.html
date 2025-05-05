@@ -1,154 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio de Luigi Fidêncio Itamar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-<body>
+  </head>
 
-    <header class="header">
-        <div class="conteudo-header">
-            <div class="left">
-                <img src="logos-linguagens/luigi.jpg" alt="Luigi">
-            </div>
-            <div class="right">
-                <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/LuigiItamar" target="_blank">GitHub</a>
-                <a href="mailto:luigifidencioitamar@gmail.com" target="_blank">Email</a>
-            </div>
+  <style>
+    @media (max-width: 728px) {
+      .projects-container::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .projects-container::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      .projects-container::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+      }
+
+      .skills-container::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .skills-container::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      .skills-container::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+      }
+    }
+  </style>
+
+  <body class="font-sans bg-gray-100 text-gray-800 leading-relaxed pt-32">
+    <header
+      class="fixed top-0 left-0 w-full bg-[#272727] h-[120px] shadow-md transition-all duration-500 z-50"
+    >
+      <div
+        class="flex items-center justify-between max-w-[1080px] mx-auto text-white p-5"
+      >
+        <div class="flex items-center">
+          <img
+            src="logos-linguagens/luigi.jpg"
+            alt="Luigi"
+            class="h-[90px] w-[90px] rounded-full mr-2.5 transition-all duration-500"
+          />
         </div>
+        <div class="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/"
+            target="_blank"
+            class="hover:text-gray-300"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/LuigiItamar"
+            target="_blank"
+            class="hover:text-gray-300"
+            >GitHub</a
+          >
+          <a
+            href="mailto:luigifidencioitamar@gmail.com"
+            target="_blank"
+            class="hover:text-gray-300"
+            >Email</a
+          >
+        </div>
+      </div>
     </header>
 
-    <main>
-        <section class="section flex flex-col sm:flex-row" id="about">
-            <!-- Div com o texto -->
-            <div class="w-full sm:w-1/2 p-3 order-2 sm:order-1">
-                <h1>Luigi Fidêncio Itamar</h1>
-                <h2>Desenvolvedor Full Stack</h2>
-                <p>Sou desenvolvedor full stack e minha principal habilidade é transformar desafios em soluções práticas. Com um olhar atento para entender as necessidades dos clientes, crio sistemas e softwares que resolvem problemas de forma eficiente e personalizada.</p>
-                <br>
-                <p>Além de desenvolver códigos limpos e otimizados, utilizo ferramentas como Figma e Photoshop para garantir interfaces intuitivas e funcionais. Meu objetivo é entregar soluções completas que aliem tecnologia, design e uma experiência excepcional para os usuários.</p>
-                <div class="flex">
-                    <img class="w-32 pt-6" src="logos-linguagens/apis3-group.svg" alt="">
-                </div>
+    <main class="max-w-[1080px] mx-auto">
+      <section
+        class="my-10 p-5 bg-white rounded-lg shadow-md flex flex-col sm:flex-row"
+        id="about"
+      >
+        <div class="w-full sm:w-1/2 p-3 order-2 sm:order-1">
+          <h1 class="text-[28px] font-bold font-sans">Luigi Fidêncio Itamar</h1>
+          <h2 class="text-[22px] font-medium font-sans pb-4">
+            Desenvolvedor Full Stack
+          </h2>
+          <p>
+            Sou desenvolvedor full stack e minha principal habilidade é
+            transformar desafios em soluções práticas. Com um olhar atento para
+            entender as necessidades dos clientes, crio sistemas e softwares que
+            resolvem problemas de forma eficiente e personalizada.
+          </p>
+          <br />
+          <p>
+            Além de desenvolver códigos limpos e otimizados, utilizo ferramentas
+            como Figma e Photoshop para garantir interfaces intuitivas e
+            funcionais. Meu objetivo é entregar soluções completas que aliem
+            tecnologia, design e uma experiência excepcional para os usuários.
+          </p>
+          <div class="flex">
+            <img
+              class="w-32 pt-6"
+              src="logos-linguagens/apis3-group.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="w-full sm:w-1/2 flex justify-center items-center order-1 sm:order-2"
+        >
+          <img
+            src="logos-linguagens/foto-luigi.jpg"
+            alt=""
+            class="w-[275px] rounded-[15px]"
+          />
+        </div>
+      </section>
+
+      <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="projects">
+        <h2 class="text-[22px] font-medium font-sans pb-4">
+          Ultimos Projetos:
+        </h2>
+      
+        <div class="relative overflow-hidden">
+          <div class="projects-container flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5">
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Nova Chevrolet
+              </h3>
+              <p class="text-base text-gray-600">
+                Integração com piperun (Ferramenta de CRM) através de API rest, tendo como objetivo de capturar os leads do site. Além de manutenções feitas no frontEnd e no backEnd, no admin e no site em si. Utilizamos Laravel com Bootstrap.
+              </p>
             </div>
-        
-            <!-- Div com a foto -->
-            <div class="w-full sm:w-1/2 foto order-1 sm:order-2">
-                <img src="logos-linguagens/foto-luigi.jpg" alt="">
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">IMT - Mauá</h3>
+              <p class="text-base text-gray-600">
+                Revitalização completa do site, com criação do frontEnd do zero e integração com o backEnd. Utilizamos Laravel (PHP), Tailwind CSS, AlpineJS, Git e GitHub;
+              </p>
             </div>
-        </section>
-        
-        
-
-        <section class="section " id="projects">
-            <h2>Ultimos Projetos:</h2>
-            <div class="projects-grid">
-                <div class="card">
-                    <h3>Sistema Para Inserção de Vagas - RH</h3>
-                    <p>Desenvolvi uma solução integrada para o RH, permitindo o cadastro de vagas através de um painel administrativo. Os dados dos candidatos interessados são capturados e vinculados a páginas dinâmicas criadas automaticamente para cada vaga específica. O projeto utilizou o CMS Storyblok em conjunto com o framework Astro e framework Tailwind para estilização, garantindo alta performance, flexibilidade na gestão de conteúdo e uma experiência dinâmica e personalizada para os usuários.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Site Para Uma Universidade</h3>
-                    <p>O site tem como objetivo promover e vender cursos de pós-graduação e especializações voltadas para a área de tecnologia, facilitando o acesso a informações sobre programas, inscrições e benefícios. Desenvolvido com WordPress e Elementor, o site apresenta um design responsivo e intuitivo, priorizando uma experiência de usuário (UX) agradável e uma interface (UI) atraente. Além disso, foram implementadas práticas de otimização para mecanismos de busca (SEO) para aumentar a visibilidade online. Este projeto demonstra minha capacidade de integrar design, funcionalidade e estratégias de marketing digital para impulsionar a conversão de visitantes em alunos.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Revitalização Visual de Sistema de Fidelidade e Compras Online</h3>
-                    <p>Realizei a revitalização visual de um sistema de fidelidade e compras online para um mercado. A plataforma oferece descontos exclusivos para clientes cadastrados com CPF, exibe produtos em promoção e permite compras online diretamente no site. A atualização focou em modernizar o design, melhorar a usabilidade e garantir uma experiência responsiva para desktop, mobile e totens nas lojas físicas. Utilizando Bootstrap para estilização, entreguei uma interface mais atraente e intuitiva, mantendo a eficiência funcional do sistema.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Site de E-commerce de Joias</h3>
-                    <p>O site foi desenvolvido com o objetivo de promover e vender joias e acessórios online, oferecendo uma experiência de compra intuitiva e agradável. Utilizando o CMS Betalabs, o projeto incorpora um design responsivo e atraente, focando em princípios de experiência do usuário (UX) e interface do usuário (UI). Além disso, foram implementadas práticas de otimização para mecanismos de busca (SEO) para aumentar a visibilidade e atrair mais visitantes. Este projeto destaca minha habilidade em criar soluções de e-commerce eficazes, integrando design, funcionalidade e estratégias de marketing digital.</p>
-                </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Labdata - MBA e Pós-Graduação 
+              </h3>
+              <p class="text-base text-gray-600">
+                Revitalização completa do site utilizando WordPress Elementor e outros plugins para melhor funcionamento do site.
+              </p>
             </div>
-        </section>
-
-        <section class="section" id="about">
-            <h2>Sobre Mim:</h2>
-            <p><strong>Programador graduado</strong>, com experiência em:</p>
-            <br>
-            <p><strong>Linguagens e Frameworks: </strong>react / JS, Laravel / PHP, MySQL, HTML5, Bootstrapp, Tailwind / CSS, Astro.</p>
-            <br>
-            <p><strong>CMS: </strong>StoryBlok, WordPress, Vtex.</p>
-            <br>
-            <p><strong>Outros conhecimentos: </strong>Conhecimento técnico como designer, utilizando Figma, Photoshopp, CorelDraw. Rápido aprendizado e com vontade de sempre aprender novas tecnologias.</p>
-        </section>
-
-        <section class="section" id="skills">
-            <h2>Habilidades:</h2>
-            <div class="skills-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" class="mx-auto" />
-                    <p>React.js</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" class="mx-auto" />
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/Astro.svg" alt="Laravel" class="mx-auto" />
-                    <p>Astro</p>
-                </div>               
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" class="mx-auto" />
-                    <p>Laravel</p>
-                </div>               
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/php-svgrepo-com.svg" alt="PHP" class="mx-auto" />
-                    <p>PHP</p>
-                </div>                
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" class="mx-auto" />
-                    <p>HTML</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/css-3-svgrepo-com.svg" alt="CSS3" class="mx-auto" />
-                    <p>CSS</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" class="mx-auto" />
-                    <p>MySQL</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshop" class="mx-auto" />
-                    <p>Photoshop</p>
-                </div>
-                <div class="skill-card text-center">
-                    <img src="logos-linguagens/Figma.png" alt="Figma" class="mx-auto" />
-                    <p>Figma</p>
-                </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Instituto Julio Simões  
+              </h3>
+              <p class="text-base text-gray-600">
+                Site criado do zero com WordPress Elementor e efeitos css puro.
+              </p>
             </div>
-        </section>
-        
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">Sistema Para Inserção de Vagas - RH</h3>
+              <p class="text-base text-gray-600">
+                Desenvolvi uma solução integrada para o RH, permitindo o cadastro
+                de vagas através de um painel administrativo. Os dados dos
+                candidatos interessados são capturados e vinculados a páginas
+                dinâmicas criadas automaticamente para cada vaga específica. Utilizei astro, StoryBlok, tailwindcss.
+              </p>
+            </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Super Mercado Nordestão
+              </h3>
+              <p class="text-base text-gray-600">
+                Revitalização visual de um sistema de fidelidade e
+                compras online para um mercado. Melhoramos a usabilidade com UX
+                garantindo uma experiência responsiva para desktop, mobile e totens
+                nas lojas físicas. Utilizando Bootstrap, Laravel php.
+              </p>
+            </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Coca Cola - Femsa
+              </h3>
+              <p class="text-base text-gray-600">
+                Criação de um sistema de previsão do tempo por região para os proximos 7 dias com objetivos de marketing interno. Aplicação feita com reactJS.
+              </p>
+            </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">
+                Site Utilizando Framework Astro com StoryBlok
+              </h3>
+              <p class="text-base text-gray-600">
+                manutenções visuais e funcionais em um site em astro com sistema de admin no Storyblok.
+              </p>
+            </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">x-Joias</h3>
+              <p class="text-base text-gray-600">
+                O site e-commerce de joias. Utilizando o CMS Betalabs pela facilidade de subir produtos em massa com integração de planilhas. o projeto incorpora um design responsivo e com tecnicas de SEO para aparecer na primeira página do google.
+              </p>
+            </div>
+      
+            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
+              <h3 class="text-2xl mb-4">Eyexpert</h3>
+              <p class="text-base text-gray-600">
+                Site para divulgação de uma clinica de Oftamoligistas, a abordagem do site é apresentar diferentes doenças e riscos para os olhos e por outro lado anunciar o tratamento para essas doenças.O projeto foi feito com HTML, CSS e JS puro. Incorpora um design responsivo e com tecnicas de SEO para aparecer na primeira página do google.
+              </p>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      
 
-        <section class="section" id="contact">
-            <h2>Contato:</h2>
-            <p>Conecte-se comigo nas redes sociais:</p>
-            <ul class="contact-list flex flex-col md:flex-row">
-                <li class="p-3">
-                    <a href="https://github.com/LuigiItamar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </li>
-                <li class="p-3">
-                    <a href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li class="p-3">
-                    <a href="mailto:luigifidencioitamar@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email: luigifidencioitamar@gmail.com</a>
-                </li>
-            </ul>
-        </section>
-        
+      <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="about">
+        <h2 class="text-[22px] font-medium font-sans pb-4">Sobre Mim:</h2>
+        <p><strong>Programador graduado</strong>, com experiência em:</p>
+        <br />
+        <p>
+          <strong>Linguagens e Frameworks: </strong>react / JS, Laravel / PHP,
+          MySQL, HTML5, Bootstrapp, Tailwind / CSS, Astro.
+        </p>
+        <br />
+        <p><strong>CMS: </strong>StoryBlok, WordPress, Vtex.</p>
+        <br />
+        <p>
+          <strong>Outros conhecimentos: </strong>Conhecimento técnico como
+          designer, utilizando Figma, Photoshopp, CorelDraw. Rápido aprendizado
+          e com vontade de sempre aprender novas tecnologias.
+        </p>
+      </section>
+
+      <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="skills">
+        <h2 class="text-[22px] font-medium font-sans pb-4">Habilidades:</h2>
+      
+        <div class="relative overflow-hidden">
+          <div class="skills-container flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">React.js</p>
+          </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">JavaScript</p>
+          </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/Astro.svg" alt="Astro" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">Astro</p>
+          </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">Laravel</p>
+          </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/php-svgrepo-com.svg" alt="PHP" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">PHP</p>
+            </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">HTML</p>
+            </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/css-3-svgrepo-com.svg" alt="CSS3" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">CSS</p>
+            </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">MySQL</p>
+            </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshop" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">Photoshop</p>
+            </div>
+            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
+              <img src="logos-linguagens/Figma.png" alt="Figma" class="w-[40px] h-[40px] mx-auto mb-3" />
+              <p class="text-lg">Figma</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="contact">
+        <h2 class="text-[22px] font-medium font-sans pb-4">Contato:</h2>
+        <p>Conecte-se comigo nas redes sociais:</p>
+        <ul class="flex flex-col md:flex-row">
+          <li class="p-3">
+            <a
+              href="https://github.com/LuigiItamar"
+              target="_blank"
+              class="hover:text-gray-600"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+          <li class="p-3">
+            <a
+              href="https://www.linkedin.com/in/luigi-fid%C3%AAncio-itamar-8054b821b/"
+              target="_blank"
+              class="hover:text-gray-600"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li class="p-3">
+            <a
+              href="mailto:luigifidencioitamar@gmail.com"
+              target="_blank"
+              class="hover:text-gray-600"
+              ><i class="fas fa-envelope"></i> Email:
+              luigifidencioitamar@gmail.com</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <script src="scripts.js"></script>
-</body>
-
+    <footer class="bg-gray-800 text-white text-center p-2.5">
+      <p>© 2025 Luigi Fidêncio Itamar - Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>
