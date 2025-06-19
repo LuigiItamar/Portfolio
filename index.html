@@ -9,10 +9,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
   </head>
 
   <style>
+    .btn-gradient {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(35deg, #212529 0%, #2dce89 100%);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-gradient::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -150%; /* começa bem fora da esquerda */
+      width: 200%;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.7);
+      transform: rotate(35deg);
+      transition: left 0.5s ease;
+      pointer-events: none;
+    }
+
+    .btn-gradient:hover::before {
+      left: 150%; /* sai do lado direito */
+    }
     @media (max-width: 728px) {
       .projects-container::-webkit-scrollbar {
         height: 8px;
@@ -128,103 +154,150 @@
         <h2 class="text-[22px] font-medium font-sans pb-4">
           Ultimos Projetos:
         </h2>
-      
+
         <div class="relative overflow-hidden">
-          <div class="projects-container flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5">
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
-                Nova Chevrolet
-              </h3>
+          <div
+            class="projects-container flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5"
+          >
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl mb-4">Equilibrio Health</h3>
+                <a
+                  href="https://luigiitamar.github.io/equilibrioHealth/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-gradient inline-block text-center"
+                >
+                  Ver Projeto
+                </a>
+              </div>
+              <img
+                class="rounded-lg mt-4"
+                src="imagens/banner-desktop.jpg"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Nova Chevrolet</h3>
               <p class="text-base text-gray-600">
-                Integração com piperun (Ferramenta de CRM) através de API rest, tendo como objetivo de capturar os leads do site. Além de manutenções feitas no frontEnd e no backEnd, no admin e no site em si. Utilizamos Laravel com Bootstrap.
+                Integração com piperun (Ferramenta de CRM) através de API rest,
+                tendo como objetivo de capturar os leads do site. Além de
+                manutenções feitas no frontEnd e no backEnd, no admin e no site
+                em si. Utilizamos Laravel com Bootstrap.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">IMT - Mauá</h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">IMT - Mauá</h3>
               <p class="text-base text-gray-600">
-                Revitalização completa do site, com criação do frontEnd do zero e integração com o backEnd. Utilizamos Laravel (PHP), Tailwind CSS, AlpineJS, Git e GitHub;
+                Revitalização completa do site, com criação do frontEnd do zero
+                e integração com o backEnd. Utilizamos Laravel (PHP), Tailwind
+                CSS, AlpineJS, Git e GitHub;
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
-                Labdata - MBA e Pós-Graduação 
-              </h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Labdata - MBA e Pós-Graduação</h3>
               <p class="text-base text-gray-600">
-                Revitalização completa do site utilizando WordPress Elementor e outros plugins para melhor funcionamento do site.
+                Revitalização completa do site utilizando WordPress Elementor e
+                outros plugins para melhor funcionamento do site.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
-                Instituto Julio Simões  
-              </h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Instituto Julio Simões</h3>
               <p class="text-base text-gray-600">
                 Site criado do zero com WordPress Elementor e efeitos css puro.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">Sistema Para Inserção de Vagas - RH</h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Sistema Para Inserção de Vagas - RH</h3>
               <p class="text-base text-gray-600">
-                Desenvolvi uma solução integrada para o RH, permitindo o cadastro
-                de vagas através de um painel administrativo. Os dados dos
-                candidatos interessados são capturados e vinculados a páginas
-                dinâmicas criadas automaticamente para cada vaga específica. Utilizei astro, StoryBlok, tailwindcss.
+                Desenvolvi uma solução integrada para o RH, permitindo o
+                cadastro de vagas através de um painel administrativo. Os dados
+                dos candidatos interessados são capturados e vinculados a
+                páginas dinâmicas criadas automaticamente para cada vaga
+                específica. Utilizei astro, StoryBlok, tailwindcss.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
-                Super Mercado Nordestão
-              </h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Super Mercado Nordestão</h3>
               <p class="text-base text-gray-600">
-                Revitalização visual de um sistema de fidelidade e
-                compras online para um mercado. Melhoramos a usabilidade com UX
-                garantindo uma experiência responsiva para desktop, mobile e totens
-                nas lojas físicas. Utilizando Bootstrap, Laravel php.
+                Revitalização visual de um sistema de fidelidade e compras
+                online para um mercado. Melhoramos a usabilidade com UX
+                garantindo uma experiência responsiva para desktop, mobile e
+                totens nas lojas físicas. Utilizando Bootstrap, Laravel php.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
-                Coca Cola - Femsa
-              </h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Coca Cola - Femsa</h3>
               <p class="text-base text-gray-600">
-                Criação de um sistema de previsão do tempo por região para os proximos 7 dias com objetivos de marketing interno. Aplicação feita com reactJS.
+                Criação de um sistema de previsão do tempo por região para os
+                proximos 7 dias com objetivos de marketing interno. Aplicação
+                feita com reactJS.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">
                 Site Utilizando Framework Astro com StoryBlok
               </h3>
               <p class="text-base text-gray-600">
-                manutenções visuais e funcionais em um site em astro com sistema de admin no Storyblok.
+                manutenções visuais e funcionais em um site em astro com sistema
+                de admin no Storyblok.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">x-Joias</h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">x-Joias</h3>
               <p class="text-base text-gray-600">
-                O site e-commerce de joias. Utilizando o CMS Betalabs pela facilidade de subir produtos em massa com integração de planilhas. o projeto incorpora um design responsivo e com tecnicas de SEO para aparecer na primeira página do google.
+                O site e-commerce de joias. Utilizando o CMS Betalabs pela
+                facilidade de subir produtos em massa com integração de
+                planilhas. o projeto incorpora um design responsivo e com
+                tecnicas de SEO para aparecer na primeira página do google.
               </p>
             </div>
-      
-            <div class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start">
-              <h3 class="text-2xl mb-4">Eyexpert</h3>
+
+            <div
+              class="min-w-full sm:min-w-0 bg-white border border-gray-300 rounded-lg p-5 shadow-md hover:-translate-y-1 transition-transform duration-300 snap-start"
+            >
+              <h3 class="text-xl mb-4">Eyexpert</h3>
               <p class="text-base text-gray-600">
-                Site para divulgação de uma clinica de Oftamoligistas, a abordagem do site é apresentar diferentes doenças e riscos para os olhos e por outro lado anunciar o tratamento para essas doenças.O projeto foi feito com HTML, CSS e JS puro. Incorpora um design responsivo e com tecnicas de SEO para aparecer na primeira página do google.
+                Site para divulgação de uma clinica de Oftamoligistas, a
+                abordagem do site é apresentar diferentes doenças e riscos para
+                os olhos e por outro lado anunciar o tratamento para essas
+                doenças.O projeto foi feito com HTML, CSS e JS puro. Incorpora
+                um design responsivo e com tecnicas de SEO para aparecer na
+                primeira página do google.
               </p>
             </div>
-      
           </div>
         </div>
       </section>
-      
-      
 
       <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="about">
         <h2 class="text-[22px] font-medium font-sans pb-4">Sobre Mim:</h2>
@@ -246,53 +319,115 @@
 
       <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="skills">
         <h2 class="text-[22px] font-medium font-sans pb-4">Habilidades:</h2>
-      
+
         <div class="relative overflow-hidden">
-          <div class="skills-container flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/react-svgrepo-com.svg" alt="React.js" class="w-[40px] h-[40px] mx-auto mb-3" />
+          <div
+            class="skills-container flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          >
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/react-svgrepo-com.svg"
+                alt="React.js"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">React.js</p>
-          </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/js-official-svgrepo-com.svg" alt="JavaScript" class="w-[40px] h-[40px] mx-auto mb-3" />
+            </div>
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/js-official-svgrepo-com.svg"
+                alt="JavaScript"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">JavaScript</p>
-          </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/Astro.svg" alt="Astro" class="w-[40px] h-[40px] mx-auto mb-3" />
+            </div>
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/Astro.svg"
+                alt="Astro"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">Astro</p>
-          </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/laravel-svgrepo-com.svg" alt="Laravel" class="w-[40px] h-[40px] mx-auto mb-3" />
+            </div>
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/laravel-svgrepo-com.svg"
+                alt="Laravel"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">Laravel</p>
-          </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/php-svgrepo-com.svg" alt="PHP" class="w-[40px] h-[40px] mx-auto mb-3" />
+            </div>
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/php-svgrepo-com.svg"
+                alt="PHP"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">PHP</p>
             </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/html-5-svgrepo-com.svg" alt="HTML5" class="w-[40px] h-[40px] mx-auto mb-3" />
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/html-5-svgrepo-com.svg"
+                alt="HTML5"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">HTML</p>
             </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/css-3-svgrepo-com.svg" alt="CSS3" class="w-[40px] h-[40px] mx-auto mb-3" />
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/css-3-svgrepo-com.svg"
+                alt="CSS3"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">CSS</p>
             </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/mysql-svgrepo-com.svg" alt="MySQL" class="w-[40px] h-[40px] mx-auto mb-3" />
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/mysql-svgrepo-com.svg"
+                alt="MySQL"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">MySQL</p>
             </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg" alt="Photoshop" class="w-[40px] h-[40px] mx-auto mb-3" />
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/photoshop-cc-logo-svgrepo-com.svg"
+                alt="Photoshop"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">Photoshop</p>
             </div>
-            <div class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start">
-              <img src="logos-linguagens/Figma.png" alt="Figma" class="w-[40px] h-[40px] mx-auto mb-3" />
+            <div
+              class="skill-item min-w-full sm:min-w-[90%] bg-gray-50 p-6 rounded-lg shadow text-center hover:scale-105 transition-transform duration-300 snap-start"
+            >
+              <img
+                src="logos-linguagens/Figma.png"
+                alt="Figma"
+                class="w-[40px] h-[40px] mx-auto mb-3"
+              />
               <p class="text-lg">Figma</p>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="my-10 p-5 bg-white rounded-lg shadow-md" id="contact">
         <h2 class="text-[22px] font-medium font-sans pb-4">Contato:</h2>
         <p>Conecte-se comigo nas redes sociais:</p>
